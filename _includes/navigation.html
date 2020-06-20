@@ -1,5 +1,7 @@
-<nav>
+
+  <nav id="navbar" class="collapse navbar-collapse">
+
     {% for item in site.data.navigation %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"{% endif %}>{{ item.name }}</a>
     {% endfor %}
-  </nav>
+  </nav> 

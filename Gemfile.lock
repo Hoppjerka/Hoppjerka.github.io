@@ -69,6 +69,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-feed
+  jekyll-sass-converter
   jekyll-seo-tag
   jekyll-sitemap
 
