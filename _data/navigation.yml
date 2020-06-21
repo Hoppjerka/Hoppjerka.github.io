@@ -1,8 +1,12 @@
 - name: Home
   link: /
-- name: About
-  link: /docs/about.html
+- name: Wiki
+  link: /docs/wiki.html
+- name: Wizard
+  link: /docs/wizard.html
 - name: Blog
   link: /docs/blog.html
+- name: About
+  link: /docs/about.html
 - name: Staff
   link: /docs/staff.html
