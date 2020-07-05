@@ -2,6 +2,12 @@
 layout: default
 title: About
 ---
-# About page
+# About this site
 
-This page tells you a little bit about me.
+The purpose of this site is to create a personal wiki of software testing. In addition, it's a way to showcase my knowledge and share it with others.
+
+----
+
+# About me
+
+Working as an IT consultant within software testing. 

@@ -5,3 +5,7 @@ plugins:
 
 # Exludes either directories or files from _site
 exclude: [test, docker-compose.yaml]
+
+collections: 
+    tools:
+      output: true

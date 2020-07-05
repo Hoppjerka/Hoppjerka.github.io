@@ -1,22 +1,10 @@
 - name: Home
   link: /
-- name: Wiki
-  link: /docs/wiki.html
-- name: Wizard
-  link: /docs/wizard.html
-- name: Blog
-  link: /docs/blog.html
+#- name: Blog
+#  link: /docs/blog.html
+- name: Showcase
+  link: /docs/showcase.html
+- name: Tools
+  link: /docs/tools.html
 - name: About
   link: /docs/about.html
-- name: Staff
-  link: /docs/staff.html
-- name: Solution
-  link: /docs/solution.html
-- name: System
-  link: /docs/system.html
-- name: Type
-  link: /docs/type.html
-- name: Technology
-  link: /docs/technology.html
-- name: Tools
-  link: /docs/tool.html

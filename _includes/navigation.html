@@ -1,47 +1,36 @@
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- navbar brand alternatives
-            
-            // as a link
-            <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-            // as an image 
-            <a class="navbar-brand" href="#">
-            <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" loading="lazy">
-            </a> 
+  <!-- nav image -->
+  <a class="navbar-brand" href="/">
+    <img src="/assets/images/brand.png" width="30" height="30" class="d-inline-block align-top" alt=""
+      loading="lazy">
+  </a>
 
-            // as image and text
-            <a class="navbar-brand" href="#">
-            <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-            Bootstrap
-            </a>
+  <!-- navbar toggler -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        -->
-        <!-- as a heading -->
-        <span class="navbar-brand mb-0 h1">Navbar</span>
+  <!-- navbar items left-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      {% for item in site.data.navigation %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.link }}">{{ item.name }} <span class="sr-only">(current)</span></a>
+      </li>
+      {% endfor %}
+    </ul>
 
-        <!-- navbar -->
-        <button class="navbar-toggler" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <!-- -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            {% for item in site.data.navigation %}
-            <li class="nav-item active">
-            <a class="nav-link" href="{{ item.link }}">{{ item.name }} <span class="sr-only">(current)</span></a>
-            </li>
-            {% endfor %}
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+    <!-- navbar items right -->
+    <ul class="navbar-nav ml-auto">
+      {% for item in site.data.contact %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.link }}" target="_blank">
+          <i class="{{ item.icon }} fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
