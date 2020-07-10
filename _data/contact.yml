@@ -7,6 +7,9 @@
 - name: Spotify
   icon: fab fa-spotify
   link: https://open.spotify.com/user/hoppjerka
+- name: Medium
+  icon: fab fa-medium-m
+  link: https://medium.com/@hoppjerka
 #- name: Facebook
 #  icon: fab fa-facebook-f
 #  link: https://www.facebook.com/hoppjerka
