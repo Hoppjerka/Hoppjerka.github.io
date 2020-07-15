@@ -3,8 +3,8 @@
 #- name: Blog
 #  link: /docs/blog.html
 - name: Showcase
-  link: /docs/showcase.html
+  link: /showcase.html
 - name: Tools
-  link: /docs/tools.html
+  link: /tools.html
 - name: About
-  link: /docs/about.html
+  link: /about.html
